@@ -1,0 +1,305 @@
+
+
+    header{
+    background:#0a0a0a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: blue;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('images.jpeg'); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+/* NAV GENERAL */
+.menu{
+     
+background:#A9A9A9;
+    padding: 10px;
+}
+
+/* LISTA */
+.menu-lista{
+
+    /* Saca los puntos */
+    list-style: none;
+
+    /* Horizontal */
+    display: flex;
+
+    /* Espacio entre opciones */
+    gap: 30px;
+
+    /* Centrado */
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* ITEMS */
+.menu-item{
+
+    color: rgb(249, 253, 2);
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+    }
+
+
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Productos */
+
+#productos-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#191919;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:16px;
+    height:60px;
+    overflow:hidden;
+}
+
+.card p{
+    font-size:20px;
+    color:#0d6efd;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.card button{
+    background:#198754;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#dc3545;
+}
+
+/* Carrito */
+
+#carrito{
+    margin-top:50px;
+    background:#191919;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+#lista-carrito{
+    list-style:none;
+    margin-top:15px;
+}
+
+#lista-carrito li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+.total{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+#vaciar-carrito{
+    margin-top:20px;
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#vaciar-carrito:hover{
+    background:#bb2d3b;
+
+}
+
+#finalizar-compra{
+    margin-top:20px;
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#finalizar-compra:hover{
+    background:#bb2d3b;
+
+}
+
+
+.botones{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:15px;
+}
+
+.agregar{
+    background:#198754;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.agregar:hover{
+    background:#146c43;
+}
+
+.quitar{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.quitar:hover{
+    background:#b02a37;
+}
+
+/* FORMULARIO */
+.formulario{
+
+    background-color: rgba(0,0,0,0.8);
+    color: yellow;
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* INPUTS */
+.formulario input{
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.formulario button{
+    width:100%;
+    padding:10px;
+    background:#198754;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.formulario button:hover{
+    background:#146c43;
+}
+
+.form-section{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    text-align:center;
+}
+
+.titulo-formulario{
+    color:white;
+    margin-bottom:10px;
+}
+
+.subtitulo-formulario{
+    color:white;
+    margin-bottom:20px;
+}
+
+.formulario textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+    resize:vertical;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda Online</title>
+
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>
+    <img src="LOGO AMAZON.png" alt="Logo Amazon" class="logo">
+    Tienda Online
+</h1>
+</header>
+
+<nav class="menu">
+<ul class="menu-lista">
+    <li class="menu-item">Amazon Bazaar</li>
+    <li class="menu-item">Ofertas del Día</li>
+    <li class="menu-item">Prime Video</li>
+    <li class="menu-item">Vender</li>
+    <li class="menu-item">Listas</li>
+    <li class="menu-item">Servicio al Cliente</li>
+</ul>
+</nav>
+
+<!-- 🔥 CONTENIDO PRINCIPAL -->
+<div class="container">
+
+    <h2>Productos</h2>
+    <div id="productos-container"></div>
+
+    <div id="carrito">
+
+        <h2>Carrito de Compras</h2>
+
+        <ul id="lista-carrito"></ul>
+
+        <div class="total">
+            Total: $<span id="total">0</span>
+        </div>
+
+        <button id="vaciar-carrito">Vaciar carrito</button>
+        <button id="finalizar-compra">Finalizar compra</button>
+
+    </div>
+
+</div>
+
+<!-- 🔥 FORMULARIO FUERA DEL CONTAINER (CLAVE) -->
+<div class="form-section">
+
+    <h2 class="titulo-formulario">Asociate a Blockbuster</h2>
+
+    <h3 class="subtitulo-formulario">
+        Completá tus datos y recibirás un mail de confirmación
+    </h3>
+
+    <form action="https://formspree.io/f/xnjwyzdb" method="POST" class="formulario">
+
+        <label>
+            Nombre y Apellido:
+            <input type="text" name="nombre" required>
+        </label>
+
+        <label>
+            Dirección:
+            <input type="text" name="direccion" required>
+        </label>
+
+        <label>
+            Teléfono:
+            <input type="tel" name="telefono" required>
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" required>
+        </label>
+
+        <button type="submit">Asociarme</button>
+
+    </form>
+
+</div>
+
+<script src="carrito.js"></script>
+
+</body>
+</html>
